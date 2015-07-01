@@ -1,0 +1,34 @@
+#! /bin/sh
+#
+# Created by configure
+
+CC="gcc"; export CC
+CFLAGS="-I/Volumes/Data/nfs/zfs-student-5/users/2014/mwilk/mamp/common/include -arch x86_64"; export CFLAGS
+CPPFLAGS="-I/Volumes/Data/nfs/zfs-student-5/users/2014/mwilk/mamp/common/include"; export CPPFLAGS
+LDFLAGS="-L/Volumes/Data/nfs/zfs-student-5/users/2014/mwilk/mamp/common/lib -liconv"; export LDFLAGS
+"./configure" \
+"--prefix=/Volumes/Data/nfs/zfs-student-5/users/2014/mwilk/mamp/apache2" \
+"--enable-so" \
+"--enable-mods-shared=most" \
+"--disable-auth_dbm" \
+"--without-berkeley-db" \
+"--enable-deflate" \
+"--enable-ssl" \
+"--with-ssl=/Volumes/Data/nfs/zfs-student-5/users/2014/mwilk/mamp/common" \
+"--enable-proxy" \
+"--enable-proxy-http" \
+"--enable-proxy-balancer" \
+"--enable-rewrite" \
+"--with-ldap" \
+"--enable-authnz-ldap" \
+"--enable-ldap" \
+"--with-apr=/Volumes/Data/nfs/zfs-student-5/users/2014/mwilk/mamp/common/bin/apr-1-config" \
+"--with-apu=/Volumes/Data/nfs/zfs-student-5/users/2014/mwilk/mamp/common/bin/apr-1-config" \
+"--with-pcre=/Volumes/Data/nfs/zfs-student-5/users/2014/mwilk/mamp/common/bin/pcre-config" \
+"--enable-mpms-shared=all" \
+"--with-mpm=prefork" \
+"CC=gcc" \
+"CFLAGS=-I/Volumes/Data/nfs/zfs-student-5/users/2014/mwilk/mamp/common/include -arch x86_64" \
+"LDFLAGS=-L/Volumes/Data/nfs/zfs-student-5/users/2014/mwilk/mamp/common/lib -liconv" \
+"CPPFLAGS=-I/Volumes/Data/nfs/zfs-student-5/users/2014/mwilk/mamp/common/include" \
+"$@"
